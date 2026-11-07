@@ -2,6 +2,9 @@
 
 A five-page classroom learning website made with semantic HTML, shared CSS and plain JavaScript. There are no third-party runtime dependencies, fonts or image services.
 
+- Live website: https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site
+- Public source repository: https://github.com/lzh123456-max/my-site
+
 ## Run locally
 
 Install Node.js, open a terminal in this folder, and run:
@@ -54,8 +57,8 @@ Open `http://127.0.0.1:4173`. Stop the server with Ctrl+C. Use an HTTP server ra
 | 9. AI code agent configured in VS Code | The student's own VS Code setup must be checked; using the Codex desktop app alone does not prove this item |
 | 10. Git installed | Git 2.56.0.windows.4 verified during creation |
 | 11. Local project initialised with Git | `.git` belongs inside this `my-site` folder, never its parent |
-| 12. GitHub account | Requires the student's connected account |
-| 13. Public GitHub remote and pushed code | Requires GitHub connection; Sites source hosting is separate from the required GitHub repository |
+| 12. GitHub account | Connected account: `lzh123456-max` |
+| 13. Public GitHub remote and pushed code | Independent public remote: `https://github.com/lzh123456-max/my-site.git`; compare local HEAD with GitHub main before submission |
 | 14. Live URL | Hosting outcome is recorded in the handover after deployment |
 
 This folder is the learning website only. Keep the personal project in a separate sibling folder with its own Git repository. The default ideas on `project.html` are complete brainstorming proposals; review them and choose the subject you actually want to build for your separate personal project.
