@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Twenty carefully sourced literary quotes. Explore the collection, search by a word, or discover a random thought.">
+  <meta name="theme-color" content="#f7f5ed">
+  <title>Quotes — Learning HTML</title>
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quotes.css">
+  <script src="nav.js" defer></script>
+  <script src="quotes.js" defer></script>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Quotes — Learning HTML">
+  <meta property="og:description" content="Twenty carefully sourced literary quotes. Explore the collection, search by a word, or discover a random thought.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/quotes.html">
+  <meta property="og:image" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- End social preview -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <div class="wrap page-intro">
+      <p class="eyebrow">01 / THE QUOTE COLLECTION</p>
+      <h1 class="page-title">Words worth<br><em>keeping.</em></h1>
+      <p class="lede">A little curiosity, a little perspective. Twenty lines from four classic books, with a trail back to every original.</p>
+    </div>
+
+    <section class="wrap featured-quote" aria-labelledby="featured-heading">
+      <div class="featured-topline">
+        <h2 id="featured-heading" class="eyebrow">A THOUGHT TO START WITH</h2>
+        <span aria-hidden="true" class="featured-star">✳</span>
+      </div>
+      <div id="featured-content" aria-live="polite" aria-atomic="true">
+        <blockquote id="featured-text"><p>Begin at the beginning, and go on till you come to the end: then stop.</p></blockquote>
+        <p class="featured-credit"><span id="featured-author">Lewis Carroll</span><span aria-hidden="true"> · </span><cite><a id="featured-source" href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite></p>
+      </div>
+      <div class="featured-bottomline">
+        <button class="button" id="random-quote" type="button" hidden>Find another thought <span aria-hidden="true">↗</span></button>
+        <span id="featured-position" class="quote-position">05 / 20</span>
+      </div>
+    </section>
+
+    <section class="wrap quote-collection" id="collection" aria-labelledby="collection-heading">
+      <div class="section-head quote-collection-heading">
+        <div><p class="eyebrow">THE READING SHELF</p><h2 id="collection-heading">The whole collection<span class="collection-dot" aria-hidden="true">.</span></h2></div>
+        <p class="quote-count" id="quote-count" role="status">20 of 20 quotes</p>
+      </div>
+      <form class="quote-filters" id="quote-filters" role="search" hidden>
+        <div class="quote-search-field"><label for="quote-search">Find a thought</label><input id="quote-search" type="search" name="q" placeholder="Search words, books or characters…" autocomplete="off"></div>
+        <div class="quote-author-field"><label for="quote-author">By author</label><select id="quote-author" name="author"><option value="">All authors</option><option>Jane Austen</option><option>Lewis Carroll</option><option>Oscar Wilde</option><option>William Shakespeare</option></select></div>
+        <button class="button button-outline quote-reset" type="reset">Clear filters <span aria-hidden="true">↺</span></button>
+      </form>
+
+      <div class="quotes-grid" id="quotes-grid">
+        <article class="quote-card" data-author="Lewis Carroll">
+          <div class="quote-card-top"><span class="quote-number">01</span><span class="quote-theme">Curiosity</span></div>
+          <blockquote><p>Curiouser and curiouser!</p></blockquote>
+          <footer><p class="quote-author">Lewis Carroll</p><cite><a href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite><p class="quote-context">Alice · Chapter 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Jane Austen">
+          <div class="quote-card-top"><span class="quote-number">02</span><span class="quote-theme">Self-discovery</span></div>
+          <blockquote><p>Till this moment, I never knew myself.</p></blockquote>
+          <footer><p class="quote-author">Jane Austen</p><cite><a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice</a></cite><p class="quote-context">Elizabeth Bennet · Chapter 36</p></footer>
+        </article>
+        <article class="quote-card" data-author="William Shakespeare">
+          <div class="quote-card-top"><span class="quote-number">03</span><span class="quote-theme">Expression</span></div>
+          <blockquote><p>Brevity is the soul of wit.</p></blockquote>
+          <footer><p class="quote-author">William Shakespeare</p><cite><a href="https://www.gutenberg.org/files/1524/1524-h/1524-h.htm">Hamlet</a></cite><p class="quote-context">Polonius · Act 2, Scene 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Oscar Wilde">
+          <div class="quote-card-top"><span class="quote-number">04</span><span class="quote-theme">Perspective</span></div>
+          <blockquote><p>The truth is rarely pure and never simple.</p></blockquote>
+          <footer><p class="quote-author">Oscar Wilde</p><cite><a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">The Importance of Being Earnest</a></cite><p class="quote-context">Algernon · Act 1</p></footer>
+        </article>
+        <article class="quote-card" data-author="Lewis Carroll">
+          <div class="quote-card-top"><span class="quote-number">05</span><span class="quote-theme">Beginnings</span></div>
+          <blockquote><p>Begin at the beginning, and go on till you come to the end: then stop.</p></blockquote>
+          <footer><p class="quote-author">Lewis Carroll</p><cite><a href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite><p class="quote-context">The King · Chapter 12</p></footer>
+        </article>
+        <article class="quote-card" data-author="Jane Austen">
+          <div class="quote-card-top"><span class="quote-number">06</span><span class="quote-theme">Reading</span></div>
+          <blockquote><p>I declare, after all, there is no enjoyment like reading!</p></blockquote>
+          <footer><p class="quote-author">Jane Austen</p><cite><a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice</a></cite><p class="quote-context">Caroline Bingley · Chapter 11</p></footer>
+        </article>
+        <article class="quote-card" data-author="William Shakespeare">
+          <div class="quote-card-top"><span class="quote-number">07</span><span class="quote-theme">Identity</span></div>
+          <blockquote><p>This above all: to thine own self be true;</p></blockquote>
+          <footer><p class="quote-author">William Shakespeare</p><cite><a href="https://www.gutenberg.org/files/1524/1524-h/1524-h.htm">Hamlet</a></cite><p class="quote-context">Polonius · Act 1, Scene 3</p></footer>
+        </article>
+        <article class="quote-card" data-author="Oscar Wilde">
+          <div class="quote-card-top"><span class="quote-number">08</span><span class="quote-theme">Romance</span></div>
+          <blockquote><p>The very essence of romance is uncertainty.</p></blockquote>
+          <footer><p class="quote-author">Oscar Wilde</p><cite><a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">The Importance of Being Earnest</a></cite><p class="quote-context">Algernon · Act 1</p></footer>
+        </article>
+        <article class="quote-card" data-author="Lewis Carroll">
+          <div class="quote-card-top"><span class="quote-number">09</span><span class="quote-theme">Belonging</span></div>
+          <blockquote><p>We’re all mad here. I’m mad. You’re mad.</p></blockquote>
+          <footer><p class="quote-author">Lewis Carroll</p><cite><a href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite><p class="quote-context">The Cheshire Cat · Chapter 6</p></footer>
+        </article>
+        <article class="quote-card" data-author="Jane Austen">
+          <div class="quote-card-top"><span class="quote-number">10</span><span class="quote-theme">Pride</span></div>
+          <blockquote><p>I could easily forgive his pride, if he had not mortified mine.</p></blockquote>
+          <footer><p class="quote-author">Jane Austen</p><cite><a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice</a></cite><p class="quote-context">Elizabeth Bennet · Chapter 5</p></footer>
+        </article>
+        <article class="quote-card" data-author="William Shakespeare">
+          <div class="quote-card-top"><span class="quote-number">11</span><span class="quote-theme">Perspective</span></div>
+          <blockquote><p>There is nothing either good or bad but thinking makes it so.</p></blockquote>
+          <footer><p class="quote-author">William Shakespeare</p><cite><a href="https://www.gutenberg.org/files/1524/1524-h/1524-h.htm">Hamlet</a></cite><p class="quote-context">Hamlet · Act 2, Scene 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Oscar Wilde">
+          <div class="quote-card-top"><span class="quote-number">12</span><span class="quote-theme">Reading</span></div>
+          <blockquote><p>I never travel without my diary. One should always have something sensational to read in the train.</p></blockquote>
+          <footer><p class="quote-author">Oscar Wilde</p><cite><a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">The Importance of Being Earnest</a></cite><p class="quote-context">Gwendolen · Act 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Lewis Carroll">
+          <div class="quote-card-top"><span class="quote-number">13</span><span class="quote-theme">Growing</span></div>
+          <blockquote><p>It’s no use going back to yesterday, because I was a different person then.</p></blockquote>
+          <footer><p class="quote-author">Lewis Carroll</p><cite><a href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite><p class="quote-context">Alice · Chapter 10</p></footer>
+        </article>
+        <article class="quote-card" data-author="Jane Austen">
+          <div class="quote-card-top"><span class="quote-number">14</span><span class="quote-theme">Judgement</span></div>
+          <blockquote><p>My good opinion once lost is lost for ever.</p></blockquote>
+          <footer><p class="quote-author">Jane Austen</p><cite><a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice</a></cite><p class="quote-context">Mr. Darcy · Chapter 11</p></footer>
+        </article>
+        <article class="quote-card" data-author="William Shakespeare">
+          <div class="quote-card-top"><span class="quote-number">15</span><span class="quote-theme">Contradictions</span></div>
+          <blockquote><p>Though this be madness, yet there is method in’t.</p></blockquote>
+          <footer><p class="quote-author">William Shakespeare</p><cite><a href="https://www.gutenberg.org/files/1524/1524-h/1524-h.htm">Hamlet</a></cite><p class="quote-context">Polonius · Act 2, Scene 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Oscar Wilde">
+          <div class="quote-card-top"><span class="quote-number">16</span><span class="quote-theme">Family</span></div>
+          <blockquote><p>All women become like their mothers. That is their tragedy. No man does. That’s his.</p></blockquote>
+          <footer><p class="quote-author">Oscar Wilde</p><cite><a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">The Importance of Being Earnest</a></cite><p class="quote-context">Algernon · Act 1</p></footer>
+        </article>
+        <article class="quote-card" data-author="Lewis Carroll">
+          <div class="quote-card-top"><span class="quote-number">17</span><span class="quote-theme">Questions</span></div>
+          <blockquote><p>Who in the world am I? Ah, that’s the great puzzle!</p></blockquote>
+          <footer><p class="quote-author">Lewis Carroll</p><cite><a href="https://www.gutenberg.org/files/11/11-h/11-h.htm">Alice’s Adventures in Wonderland</a></cite><p class="quote-context">Alice · Chapter 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Jane Austen">
+          <div class="quote-card-top"><span class="quote-number">18</span><span class="quote-theme">Expectations</span></div>
+          <blockquote><p>It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.</p></blockquote>
+          <footer><p class="quote-author">Jane Austen</p><cite><a href="https://www.gutenberg.org/files/1342/1342-h/1342-h.htm">Pride and Prejudice</a></cite><p class="quote-context">Narrator · Chapter 1</p></footer>
+        </article>
+        <article class="quote-card" data-author="William Shakespeare">
+          <div class="quote-card-top"><span class="quote-number">19</span><span class="quote-theme">Endings</span></div>
+          <blockquote><p>The rest is silence.</p></blockquote>
+          <footer><p class="quote-author">William Shakespeare</p><cite><a href="https://www.gutenberg.org/files/1524/1524-h/1524-h.htm">Hamlet</a></cite><p class="quote-context">Hamlet · Act 5, Scene 2</p></footer>
+        </article>
+        <article class="quote-card" data-author="Oscar Wilde">
+          <div class="quote-card-top"><span class="quote-number">20</span><span class="quote-theme">Absurdity</span></div>
+          <blockquote><p>To lose one parent, Mr. Worthing, may be regarded as a misfortune; to lose both looks like carelessness.</p></blockquote>
+          <footer><p class="quote-author">Oscar Wilde</p><cite><a href="https://www.gutenberg.org/files/844/844-h/844-h.htm">The Importance of Being Earnest</a></cite><p class="quote-context">Lady Bracknell · Act 1</p></footer>
+        </article>
+      </div>
+      <div class="quotes-empty" id="quotes-empty" hidden><span aria-hidden="true">∅</span><h3>No thoughts found. Yet.</h3><p>Try a shorter word or choose another author. Clear the filters to return to all twenty quotes.</p><button class="button button-outline" type="reset" form="quote-filters">Show all quotes <span aria-hidden="true">↗</span></button></div>
+      <p class="quote-source-note">A note on sources: these are short excerpts from public-domain works. Each book title links to its complete text at Project Gutenberg. The character and chapter or scene are included so you can read every line in context.</p>
+      <noscript><p class="quote-source-note">The complete collection and source links work without JavaScript. Enable JavaScript to use the random quote, search and author filters.</p></noscript>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

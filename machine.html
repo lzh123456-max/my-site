@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the Nothing Printer, a playful useless machine, then test your HTML knowledge in a five-round closing-tag game.">
+  <title>The Machine — Learning HTML</title>
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="machine.css">
+  <script src="nav.js" defer></script>
+  <script src="machine.js" defer></script>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="The Machine — Learning HTML">
+  <meta property="og:description" content="Meet the Nothing Printer, a playful useless machine, then test your HTML knowledge in a five-round closing-tag game.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/machine.html">
+  <meta property="og:image" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- End social preview -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="wrap machine-page">
+    <header class="page-intro">
+      <p class="eyebrow">03 / The little experiment</p>
+      <h1 class="page-title">Perfectly good at<br><em>doing nothing.</em></h1>
+      <p class="lede">A tiny machine with a very small ambition. Press the button. Expect less.</p>
+    </header>
+
+    <section class="printer-lab" aria-labelledby="printer-title">
+      <div class="printer-copy">
+        <p class="eyebrow">An exercise in uselessness</p>
+        <h2 id="printer-title">The Nothing Printer</h2>
+        <p>It carefully prints a little thought. Then it changes its mind and takes the paper back. Some things are better left unprinted.</p>
+        <button class="button printer-button" id="print-button" type="button">Print nothing <span aria-hidden="true">↗</span></button>
+        <p id="printer-status" class="printer-status" role="status" aria-live="polite" aria-atomic="true">Ready to achieve absolutely nothing.</p>
+      </div>
+      <div class="printer-art">
+        <div id="nothing-printer" class="printer-scene" data-state="idle" aria-hidden="true">
+          <div class="printer-orbit orbit-one"></div>
+          <div class="printer-orbit orbit-two"></div>
+          <span class="scene-asterisk">✳</span>
+          <div class="paper-window">
+            <div class="printer-paper">
+              <span class="paper-number">N° 000</span>
+              <span class="paper-phrase" id="paper-phrase">Nothing to see here.</span>
+              <span class="paper-rule"></span>
+              <span class="paper-signoff">a very limited edition</span>
+            </div>
+          </div>
+          <div class="printer-body">
+            <div class="printer-slot"></div>
+            <div class="printer-face"><span class="printer-light"></span><span>NOTHING / PRESS</span></div>
+            <div class="printer-vents"><span></span><span></span><span></span><span></span></div>
+            <span class="printer-sticker">100%<br>unproductive</span>
+          </div>
+          <div class="printer-shadow"></div>
+        </div>
+        <p class="art-caption">One button. A brief surprise. Back to the beginning.</p>
+      </div>
+    </section>
+
+    <section class="machine-notes" aria-labelledby="loop-title">
+      <div><p class="eyebrow">Under the paper</p><h2 id="loop-title">A small loop, clearly defined.</h2></div>
+      <ol class="state-loop">
+        <li><span>01</span><strong>Idle</strong><p>Waiting for a press.</p></li>
+        <li><span>02</span><strong>Printing</strong><p>A thought appears.</p></li>
+        <li><span>03</span><strong>Retracting</strong><p>The paper disappears.</p></li>
+        <li><span>↺</span><strong>Idle, again</strong><p>Ready to do it all over.</p></li>
+      </ol>
+      <p class="machine-footnote">The button works with a mouse, a finger, or Tab and Space. A running cycle finishes before another begins. Reduced-motion preferences keep the joke and skip the movement.</p>
+    </section>
+
+    <section class="tag-game" aria-labelledby="game-title">
+      <div class="game-intro">
+        <p class="eyebrow">Something a little more useful</p>
+        <h2 id="game-title">Close the tag.</h2>
+        <p>Every opening needs the right ending. Match five HTML elements with their closing tags. One point for each correct answer.</p>
+        <p class="game-note">A quick practice in document structure, inspired by Lesson 2.</p>
+      </div>
+      <div class="game-board" id="tag-game">
+        <div class="game-board-top"><span class="tag">HTML / MINI GAME</span><span id="game-progress">5 rounds</span></div>
+        <div id="game-welcome">
+          <p class="game-welcome-mark" aria-hidden="true">&lt;/&gt;</p>
+          <p class="game-welcome-copy">Find the matching closing tag.</p>
+          <button class="button" id="game-start" type="button">Start playing <span aria-hidden="true">→</span></button>
+        </div>
+        <div id="game-play" hidden>
+          <p class="game-question" id="game-question">Which tag closes this element?</p>
+          <pre class="tag-prompt"><code id="opening-tag"></code></pre>
+          <div class="tag-options" id="tag-options" role="group" aria-labelledby="game-question"></div>
+          <p class="game-feedback" id="game-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+          <button class="button button-outline" id="game-next" type="button" hidden>Next round <span aria-hidden="true">→</span></button>
+        </div>
+        <div id="game-result" hidden>
+          <p class="result-label">Your final score</p>
+          <p class="game-score" id="game-score"></p>
+          <p id="game-result-message"></p>
+          <button class="button" id="game-restart" type="button">Play again <span aria-hidden="true">↻</span></button>
+        </div>
+        <p class="game-scoreline" id="game-scoreline" aria-live="polite">No timer. Take your time.</p>
+      </div>
+    </section>
+    <noscript><p class="machine-footnote">The printer and game need JavaScript. The state diagram above explains how the machine works.</p></noscript>
+    <div class="machine-next"><p>From little experiments to bigger ideas.</p><a class="button button-outline" href="project.html">Explore project ideas <span aria-hidden="true">→</span></a></div>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

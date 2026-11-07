@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small, hands-on web notebook: twenty literary quotes, five project ideas, and a delightfully useless machine. Built with HTML, CSS and JavaScript.">
+  <title>Learning HTML — A notebook for the web</title>
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Learning HTML — A notebook for the web">
+  <meta property="og:description" content="A small, hands-on web notebook: twenty literary quotes, five project ideas, and a delightfully useless machine. Built with HTML, CSS and JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/">
+  <meta property="og:image" content="https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- End social preview -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main" class="wrap">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div>
+        <p class="eyebrow">A notebook for the web</p>
+        <h1 id="home-title">Learning HTML,<em>by doing.</em></h1>
+        <p class="lede">A little curiosity. A few lines of code. A collection of things made while learning how the web works.</p>
+        <div class="hero-actions"><a class="button" href="#explore">Explore the notebook <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">The story so far</a></div>
+        <p class="hero-note"><span aria-hidden="true"></span> Built with HTML, CSS &amp; a bit of JavaScript</p>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/hero.svg" alt="An illustrated browser window with HTML code, a yellow idea note and a blue page taking shape." width="620" height="570" fetchpriority="high">
+        <figcaption><span>FIG. 01 — FROM A TAG TO A PAGE</span><span>Made of small beginnings.</span></figcaption>
+      </figure>
+    </section>
+    <div class="site-strip"><span><strong>05</strong> pages to wander through</span><span><strong>20</strong> quotes worth keeping</span><span><strong>01</strong> wonderfully useless machine</span><span class="strip-note">Small experiments. Real discoveries.</span></div>
+    <section class="section-space" id="explore" aria-labelledby="explore-title">
+      <div class="section-head"><div><p class="eyebrow">Inside the notebook</p><h2 id="explore-title">Follow your curiosity.</h2></div><p>Words to think about, ideas to build on, and a button you will probably press twice.</p></div>
+      <div class="explore-grid">
+        <a class="explore-item" href="quotes.html"><span class="explore-number">01 / COLLECT</span><h3>Good words.</h3><p>Twenty lines from well-loved books. Find a favourite, or leave it to chance.</p><span class="explore-arrow" aria-hidden="true">↗</span><span class="sr-only"> Explore quotes</span></a>
+        <a class="explore-item" href="project.html"><span class="explore-number">02 / IMAGINE</span><h3>What comes next?</h3><p>Five website ideas, the people they are for, and a plan for the first one.</p><span class="explore-arrow" aria-hidden="true">↗</span><span class="sr-only"> Explore project ideas</span></a>
+        <a class="explore-item" href="machine.html"><span class="explore-number">03 / PLAY</span><h3>Perfectly pointless.</h3><p>A printer with its own plans. Plus a small game to put your HTML to the test.</p><span class="explore-arrow" aria-hidden="true">↗</span><span class="sr-only"> Try the machine</span></a>
+        <a class="explore-item" href="about.html"><span class="explore-number">04 / REFLECT</span><h3>Behind the pages.</h3><p>The lessons, decisions and small discoveries that hold this website together.</p><span class="explore-arrow" aria-hidden="true">↗</span><span class="sr-only"> Read about the project</span></a>
+      </div>
+    </section>
+    <section class="principle" aria-labelledby="principle-title">
+      <div><p class="eyebrow">One thing to remember</p><h2 id="principle-title">Start with<br>the structure.</h2><p>Give every piece a purpose. HTML describes the content, CSS gives it a look, and JavaScript makes it respond.</p><a class="text-link" href="about.html#lessons">See what went into this site ↗</a></div>
+      <div class="code-sample" aria-label="A simple semantic HTML page structure"><code>&lt;main&gt;</code><div class="code-indent">&lt;h1&gt;Hello, web.&lt;/h1&gt;<br>&lt;p&gt;Every page starts somewhere.&lt;/p&gt;</div><code>&lt;/main&gt;</code></div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <noscript><p class="wrap fragment-error">JavaScript is needed for the shared navigation and interactive exercises. You can still explore the <a href="quotes.html">quotes</a>, <a href="project.html">project ideas</a>, <a href="machine.html">machine</a> and <a href="about.html">about page</a>.</p></noscript>
+</body>
+</html>
