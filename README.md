@@ -58,8 +58,8 @@ Open `http://127.0.0.1:4173`. Stop the server with Ctrl+C. Use an HTTP server ra
 | 10. Git installed | Git 2.56.0.windows.4 verified during creation |
 | 11. Local project initialised with Git | `.git` belongs inside this `my-site` folder, never its parent |
 | 12. GitHub account | Connected account: `lzh123456-max` |
-| 13. Public GitHub remote and pushed code | Independent public remote: `https://github.com/lzh123456-max/my-site.git`; compare local HEAD with GitHub main before submission |
-| 14. Live URL | Hosting outcome is recorded in the handover after deployment |
+| 13. Public GitHub remote and pushed code | Source and original Git history pushed to `https://github.com/lzh123456-max/my-site.git`; `main` tracks `origin/main` |
+| 14. Live URL | Public website: https://learning-html-fieldnotes-1107.fine-rook-2145.chatgpt.site |
 
 This folder is the learning website only. Keep the personal project in a separate sibling folder with its own Git repository. The default ideas on `project.html` are complete brainstorming proposals; review them and choose the subject you actually want to build for your separate personal project.
 
